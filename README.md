@@ -13,6 +13,15 @@
 - **Frontend:** HTML/CSS, LeafletJS.
 
 ## 📦 Cài đặt
-1. Clone dự án: `git clone https://github.com/...`
-2. Cài thư viện: `pip install -r requirements.txt`
-3. Chạy: `python run.py`
+1. Clone dự án:
+```
+git clone https://github.com/...
+```
+2. Cài thư viện:
+```
+pip install -r requirements.txt
+```
+3. Chạy:
+```
+python run.py
+```

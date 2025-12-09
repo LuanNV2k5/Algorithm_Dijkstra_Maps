@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đồ án Tìm đường Du lịch</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Du lịch Thông minh</h2>
+            <p>Chọn các điểm trên bản đồ để lập lộ trình.</p>
+            <ul id="points-list"></ul>
+            
+            <div class="buttons">
+                <button onclick="findPath()" class="btn-primary">Tìm đường (Dijkstra)</button>
+                <button onclick="resetMap()" class="btn-secondary">Làm mới</button>
+            </div>
+            <div id="status"></div>
+
+            <hr>
+            <h3>📍 Chi tiết lộ trình</h3>
+            <div id="route-details" style="overflow-y: auto; flex-grow: 1; border-top: 1px solid #eee; padding-top: 10px;">
+                <p style="color: #666; font-style: italic; font-size: 0.9em;">Chưa có lộ trình nào.</p>
+            </div>
+        </div>
+        
+        <div id="map"></div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+# Bỏ qua thư mục biên dịch Python
+__pycache__/
+*.pyc
+
+# Bỏ qua file cache bản đồ (File này nặng, người khác chạy code sẽ tự tải lại)
+*.graphml
+graph_cache.graphml
+
+# Bỏ qua file cấu hình hệ thống
+.DS_Store
